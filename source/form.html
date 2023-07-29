@@ -7,14 +7,14 @@
   <body class="page__body">
     <div class="page__index">
       <header class="main-header">
-        <a class="main-header__logo" href="">
+        <a class="main-header__logo" href="#">
           <img  class="main-header__logo-img" src="#" alt="Логотип сайта.">
           <img  class="main-header__logo-text" src="#" alt="Cat energy.">
         </a>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Взаимодействие с меню.</span>
+        </button>
         <nav class="main-nav">
-          <button class="main-nav__toggle">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
               <a class="main-nav__list-link" href="#">
@@ -35,8 +35,10 @@
         </nav>
       </header>
       <main class="main-container">
-        <h1 class="form__title">Подбор программы</h1>
-        <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <section class="form__title-wrapper">
+          <h1 class="form__title">Подбор программы</h1>
+          <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </section>
         <span class="visually-hidden">Анкета для заполнения.</span>
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
           <ul class="form-list">
@@ -87,13 +89,13 @@
                 <input class="form-contacts__input" type="email" value="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" required aria-label="Введите ваш e-mail.">
               </label>
               <label class="form-contacts__label">
-                <span class="form-contacts__text">E-mail:</span>
+                <span class="form-contacts__text">Телефон:</span>
                 <input class="form-contacts__input" type="tel" value="8 (960) 900-60-90" placeholder="8 (960) 900-60-90" required aria-label="Введите ваш номер телефона.">
               </label>
             </div>
           </div>
           <div class="form-comment">
-            <input class="form-comment__input" type="text" placeholder="Расскажите обо всех повадках кота">
+            <textarea class="form-comment__input" name="comment" cols="30" rows="4">Расскажите обо всех повадках кота</textarea>
           </div>
           <ul class="form-additions">
             <li class="form-additions__item">
