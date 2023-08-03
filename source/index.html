@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи - главная</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <div class="page__index">
       <header class="main-header">
-        <a class="main-header__logo" href="">
+        <a class="main-header__logo" href="#">
           <img  class="main-header__logo-img" src="#" alt="Логотип сайта.">
           <img  class="main-header__logo-text" src="#" alt="Cat energy.">
         </a>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Взаимодействие с меню.</span>
+        </button>
         <nav class="main-nav">
-          <button class="main-nav__toggle">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
               <a class="main-nav__list-link main-nav__list-link--active" href="#">
@@ -36,9 +37,9 @@
       </header>
       <main class="main-container">
         <section class="promo">
-          <div class="promo__text">
-            <h1 class="promo__title">Функциональное питание для котов.</h1>
-            <p class="promo__description">Занялся собой? Займись котом</p>
+          <div class="page__text page__text--promo">
+            <h1 class="page__header">Функциональное питание для котов.</h1>
+            <p class="page__description">Занялся собой? Займись котом</p>
           </div>
           <a  class="promo__link" href="#">Подобрать программу</a>
         </section>
