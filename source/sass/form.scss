@@ -1,0 +1,113 @@
+@import "./variables.scss";
+
+.form-text {
+  color: $color-dark-gray;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.form-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.page__text--form {
+  padding-bottom: 39px;
+}
+
+.form-list.list {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 10px;
+}
+
+.form-list__item {
+  padding-bottom: 14px;
+}
+
+.form-list__text {
+  padding-right: 13px;
+}
+
+.form-list__input {
+  min-height: 45px;
+  border: 1px solid #e7e7e7;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.form-option__item {
+  padding-bottom: 13px;
+}
+
+.form-option.list {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 22px;
+}
+
+.form-option__text {
+  padding-left: 15px;
+}
+
+.form-contacts__title {
+  padding-top: 26px;
+  padding-bottom: 35px;
+}
+
+.form-contacts__input {
+  min-height: 45px;
+  border: 1px solid #e7e7e7;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.form-contacts__text {
+  padding-right: 13px;
+}
+
+.form-contacts__item {
+  padding-bottom: 14px;
+}
+
+.form-comment__title {
+  padding-bottom: 38px;
+}
+
+.form-comment__input {
+  min-height: 150px;
+  width: 280px;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+}
+
+.form-comment {
+  padding: 10px 0 23px 0;
+}
+
+.form-additions__title {
+  padding-bottom: 36px;
+}
+
+.form-additions__text {
+  padding-left: 15px;
+}
+
+.form-additions__item {
+  padding-bottom: 15px;
+}
+
+.form-send__button {
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 40px;
+  width: 280px;
+  margin-bottom: 21px;
+}

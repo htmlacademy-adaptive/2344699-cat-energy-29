@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+.example {
+  padding: 25px 0  40px 0;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: $color-basic-black;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  color: $color-dark-gray;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__card-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-basic-black;
+  margin: 0;
+}
+
+.example__card-description {
+  color: $color-dark-gray;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  margin: 0;
+}
+
+.example__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-basic-black;
+  margin: 0;
+  padding-bottom: 20px;
+}

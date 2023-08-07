@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.promo {
+  padding-bottom: 20px;
+}
+
+.page__text--promo {
+  background-color: $bg-color-button;
+  color: $color-basic-white;
+}
+
+.promo__link {
+  min-height: 40px;
+  padding: 8px 44px;
+  margin-top: 138px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
