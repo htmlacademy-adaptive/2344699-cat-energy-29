@@ -1,106 +1,16 @@
-// Начните писать стили здесь
-
-// @import "./catalog-additions.scss";
-// @import "./catalog-gift.scss";
-@import "./catalog.scss";
-@import "./example.scss";
-@import "./form.scss";
-@import "./main-footer.scss";
-@import "./main-header.scss";
-@import "./programs.scss";
-@import "./promo.scss";
-@import "./special.scss";
-@import "./variables.scss";
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-.page__body {
-  font-family: "Lato", "Oswald", sans-serif;
-  color: $color-basic-black;
-  background-color: $color-basic-white;
-  padding: 0 20px;
-  margin: 0;
-}
-
-.list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.page__header {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
-  padding-top: 27px;
-  margin: 0;
-}
-
-.page__description {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-  text-transform: uppercase;
-  margin: 0;
-  padding-top: 25px;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 8px;
-  border: none;
-  font-weight: 700;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-  height: fit-content;
-  box-sizing: border-box;
-  background-color: $bg-color-button;
-}
+@import "./common/variables.scss";
+@import "./common/normalize.scss";
+@import "./common/page.scss";
+@import "./common/fonts.scss";
+@import "./common/button.scss";
+@import "./common/visually-hidden.scss";
+@import "./blocks/catalog-additions.scss";
+@import "./blocks/catalog-gift.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/example.scss";
+@import "./blocks/form.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/special.scss";

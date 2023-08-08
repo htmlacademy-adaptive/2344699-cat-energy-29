@@ -1,5 +1,3 @@
-@import "./variables.scss";
-
 .main-footer__collab-title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -8,8 +6,7 @@
   text-transform: uppercase;
   color: $color-basic-black;
   margin: 0;
-  padding: 26px 0;
-  padding-right: 8px;
+  padding: 26px 8px 26px 0;
 }
 
 .main-footer__collab-description {

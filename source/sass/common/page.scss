@@ -1,0 +1,26 @@
+.page__body {
+  font-family: "Lato", "Oswald", sans-serif;
+  color: $color-basic-black;
+  background-color: $color-basic-white;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.page__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  padding-top: 27px;
+  margin: 0;
+}
+
+.page__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 25px;
+}

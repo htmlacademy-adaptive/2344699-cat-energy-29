@@ -1,0 +1,46 @@
+.catalog-additions__title {
+  font-family: "Oswald", sans-serif;
+  color: $color-basic-black;
+  font-size: 24px;
+  line-height: 24px;
+  border-bottom: 1px solid #cdcdcd;
+  margin: 0;
+  padding: 25px 0 36px 0;
+}
+
+.additions-list__item {
+  padding: 13px 0 19px 0;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additions-list__title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-bottom: 13px;
+}
+
+.additions-list__info-name {
+  float: left;
+  margin-right: 15px;
+}
+
+.additions-list__info-value {
+  text-align: right;
+}
+
+.additions-list__info {
+  font-family: "Lato", sans-serif;
+  color: $color-dark-gray;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.additions-list__button {
+  width: 280px;
+  min-height: 40px;
+}
