@@ -3,31 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи - форма</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <div class="page__index">
       <header class="main-header">
-        <a class="main-header__logo" href="#">
-          <img  class="main-header__logo-img" src="#" alt="Логотип сайта.">
-          <img  class="main-header__logo-text" src="#" alt="Cat energy.">
-        </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Взаимодействие с меню.</span>
-        </button>
+        <div class="main-header__logo-wrapper main-header__logo-wrapper--mobile">
+          <a class="main-header__logo" href="index.html">
+            <img  class="main-header__logo-img" src="#" alt="Логотип сайта.">
+            <img  class="main-header__logo-text" src="#" alt="Cat energy.">
+          </a>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Взаимодействие с меню.</span>
+          </button>
+        </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link" href="#">
+              <a class="main-nav__list-link main-nav__list-link--mobile" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link" href="#">
+              <a class="main-nav__list-link main-nav__list-link--mobile" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link main-nav__list-link--active" href="#">
+              <a class="main-nav__list-link main-nav__list-link--mobile main-nav__list-link--active" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -35,96 +38,104 @@
         </nav>
       </header>
       <main class="main-container">
-        <section class="form__title-wrapper">
-          <h1 class="form__title">Подбор программы</h1>
-          <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <section class="page__text page__text--form">
+          <h1 class="page__title">Подбор программы</h1>
+          <p class="page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </section>
         <span class="visually-hidden">Анкета для заполнения.</span>
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
           <ul class="form-list">
             <li class="form-list__item">
               <label class="form-list__label" for="name">
-                <span class="form-list__text">Имя:</span>
-                <input class="form-list__input" type="text" value="Барсик" aria-label="Ввод имени кота." name="name" id="name" required>
+                <span class="form-list__text form-text">Имя:*</span>
+                <input class="form-list__input form-text" type="text" value="Барсик" aria-label="Ввод имени кота." name="name" id="name" required>
               </label>
             </li>
             <li class="form-list__item">
               <label class="form-list__label" for="weight">
-                <span class="form-list__text">Вес (кг):</span>
-                <input class="form-list__input" type="text" value="7" aria-label="Ввод веса кота." name="weight" id="weight" required>
+                <span class="form-list__text form-text">Вес (кг):*</span>
+                <input class="form-list__input form-text" type="text" value="7" aria-label="Ввод веса кота." name="weight" id="weight" required>
               </label>
             </li>
             <li class="form-list__item">
               <label class="form-list__label" for="age">
-                <span class="form-list__text">Возраст (лет):</span>
-                <input class="form-list__input" type="text" value="7" aria-label="Ввод возраста кота." name="age" id="age">
+                <span class="form-list__text form-text">Возраст (лет):</span>
+                <input class="form-list__input form-text" type="text" value="7" aria-label="Ввод возраста кота." name="age" id="age">
               </label>
             </li>
           </ul>
           <ul class="form-option">
             <li class="form-option__item">
-              <label class="form-option__lable">
+              <label class="form-option__label">
                 <input class="form-option__input" type="radio" name="slim" value="slim" checked>
-                <span class="form-option__text">Похудение</span>
+                <span class="form-option__text form-text">Похудение</span>
               </label>
             </li>
             <li class="form-option__item">
-              <label class="form-option__lable">
+              <label class="form-option__label">
                 <input class="form-option__input" type="radio" name="pro" value="pro">
-                <span class="form-option__text">Набор массы</span>
+                <span class="form-option__text form-text">Набор массы</span>
               </label>
             </li>
             <li class="form-option__item">
-              <label class="form-option__lable">
+              <label class="form-option__label">
                 <input class="form-option__input" type="radio" name="help" value="help">
-                <span class="form-option__text">Не знаю (нужен ваш совет)</span>
+                <span class="form-option__text form-text">Не знаю (нужен ваш совет)</span>
               </label>
             </li>
           </ul>
           <div class="form-contacts">
-            <h3 class="form-contacts__title">Контактные данные (владельца кота)</h3>
-            <div class="form-contacts__wrapper">
-              <label class="form-contacts__label">
-                <span class="form-contacts__text">E-mail:</span>
-                <input class="form-contacts__input" type="email" value="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" required aria-label="Введите ваш e-mail.">
-              </label>
-              <label class="form-contacts__label">
-                <span class="form-contacts__text">Телефон:</span>
-                <input class="form-contacts__input" type="tel" value="8 (960) 900-60-90" placeholder="8 (960) 900-60-90" required aria-label="Введите ваш номер телефона.">
-              </label>
-            </div>
+            <h3 class="form-contacts__title form-title">Контактные данные (владельца кота)</h3>
+            <ul class="form-contacts__list">
+              <li class="form-contacts__item">
+                <label class="form-contacts__label">
+                  <span class="form-contacts__text form-text">E-mail:</span>
+                  <input class="form-contacts__input form-text" type="email" value="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" required aria-label="Введите ваш e-mail.">
+                </label>
+              </li>
+              <li class="form-contacts__item">
+                <label class="form-contacts__label">
+                  <span class="form-contacts__text form-text">Телефон:</span>
+                  <input class="form-contacts__input form-text" type="tel" value="8 (960) 900-60-90" placeholder="8 (960) 900-60-90" required aria-label="Введите ваш номер телефона.">
+                </label>
+              </li>
+            </ul>
           </div>
           <div class="form-comment">
-            <textarea class="form-comment__input" name="comment" cols="30" rows="4">Расскажите обо всех повадках кота</textarea>
+            <h3 class="form-comment__title form-title">Комментарий</h3>
+            <textarea class="form-comment__input form-text" name="comment" cols="30" rows="4">Расскажите обо всех повадках кота</textarea>
           </div>
-          <ul class="form-additions">
-            <li class="form-additions__item">
-              <label class="form-additions__label">
-                <input class="form-additions__input" type="checkbox" name="sweetener" value="sweetener">
-                <span class="form-additions__text">Сахарозаменитель</span>
-              </label>
-            </li>
-            <li class="form-additions__item">
-              <label class="form-additions__label">
-                <input class="form-additions__input" type="checkbox" name="water" value="water">
-                <span class="form-additions__text">Питьевая вода</span>
-              </label>
-            </li>
-            <li class="form-additions__item">
-              <label class="form-additions__label">
-                <input class="form-additions__input" type="checkbox" name="milk" value="milk">
-                <span class="form-additions__text">Молоко</span>
-              </label>
-            </li>
-            <li class="form-additions__item">
-              <label class="form-additions__label">
-                <input class="form-additions__input" type="checkbox" name="vitamins" value="vitamins">
-                <span class="form-additions__text">Витамины</span>
-              </label>
-            </li>
-          </ul>
+          <div class="form-additions">
+            <h3 class="form-additions__title form-title">Дополнительно</h3>
+            <ul class="form-additions__list">
+              <li class="form-additions__item">
+                <label class="form-additions__label">
+                  <input class="form-additions__input" type="checkbox" name="sweetener" value="sweetener" checked>
+                  <span class="form-additions__text form-text">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="form-additions__item">
+                <label class="form-additions__label">
+                  <input class="form-additions__input" type="checkbox" name="water" value="water">
+                  <span class="form-additions__text form-text">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="form-additions__item">
+                <label class="form-additions__label">
+                  <input class="form-additions__input" type="checkbox" name="milk" value="milk">
+                  <span class="form-additions__text form-text">Молоко</span>
+                </label>
+              </li>
+              <li class="form-additions__item">
+                <label class="form-additions__label">
+                  <input class="form-additions__input" type="checkbox" name="vitamins" value="vitamins">
+                  <span class="form-additions__text form-text">Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </div>
           <div class="form-send">
-            <button class="form-send__button" type="submit">Отправить</button>
+            <button class="form-send__button button" type="submit">Отправить заявку</button>
             <span class="form-send__caption">* — Обязательные поля</span>
           </div>
         </form>

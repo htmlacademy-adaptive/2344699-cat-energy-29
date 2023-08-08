@@ -1,0 +1,33 @@
+.special {
+  padding-bottom: 29px;
+}
+
+.special__title {
+  color: $color-basic-black;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  padding-bottom: 42px;
+}
+
+.special__card-description {
+  font-family: "Lato", sans-serif;
+  color: $color-dark-gray;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-left: 20px;
+}
+
+.special__card-img {
+  background-color: $bg-color-button;
+  width: 60px;
+  height: 60px;
+}
+
+.special__card {
+  display: flex;
+  margin-bottom: 20px;
+}

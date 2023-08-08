@@ -1,1 +1,16 @@
-// Начните писать стили здесь
+@import "./common/variables.scss";
+@import "./common/normalize.scss";
+@import "./common/page.scss";
+@import "./common/fonts.scss";
+@import "./common/button.scss";
+@import "./common/visually-hidden.scss";
+@import "./blocks/catalog-additions.scss";
+@import "./blocks/catalog-gift.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/example.scss";
+@import "./blocks/form.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/special.scss";

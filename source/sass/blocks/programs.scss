@@ -1,0 +1,39 @@
+.programs__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  color: $color-basic-black;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.programs__description {
+  color: $color-dark-gray;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 23px;
+  margin: 0;
+  margin-top: 29px;
+}
+
+.programs__card {
+  background-color: $bg-color-grey;
+  display: block;
+  padding: 30px 33px 18px 20px;
+  margin-bottom: 20px;
+}
+
+.programs__link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-basic-black;
+  margin-top: 19px;
+  display: block;
+}
