@@ -9,7 +9,17 @@
   font-weight: 400;
   line-height: 40px;
   margin: 0;
-  padding-bottom: 42px;
+  padding: 0 20px 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 15px 30px 32px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 106px 32px 110px;
+  }
 }
 
 .special__card-description {
@@ -18,16 +28,50 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  padding-left: 20px;
+  padding: 0 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+  }
 }
 
 .special__card-img {
   background-color: $bg-color-button;
   width: 60px;
   height: 60px;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    margin: 0 0 31px 0;
+  }
 }
 
 .special__card {
   display: flex;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding: 40px 26px 57px 0;
+    margin: 0;
+  }
+}
+
+.special__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 100px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto auto auto auto;
+    padding: 0 110px;
+  }
 }
