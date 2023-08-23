@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи - главная</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <div class="page__index">
       <header class="main-header">
-        <div class="main-header__logo-wrapper main-header__logo-wrapper--mobile">
+        <div class="main-header__logo-wrapper">
           <a class="main-header__logo" href="index.html">
             <img  class="main-header__logo-img" src="#" alt="Логотип сайта.">
             <img  class="main-header__logo-text" src="#" alt="Cat energy.">
@@ -20,17 +21,17 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link main-nav__list-link--active main-nav__list-link--mobile" href="index.html">
+              <a class="main-nav__list-link main-nav__list-link--index main-nav__list-link--index-active" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link main-nav__list-link--mobile" href="catalog.html">
+              <a class="main-nav__list-link main-nav__list-link--index" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link main-nav__list-link--mobile" href="form.html">
+              <a class="main-nav__list-link main-nav__list-link--index" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -39,11 +40,17 @@
       </header>
       <main class="main-container">
         <section class="promo">
-          <div class="page__text page__text--promo">
-            <h1 class="page__title">Функциональное питание для котов.</h1>
-            <p class="page__description">Занялся собой? Займись котом</p>
+          <div class="page__text-wrapper">
+            <div class="page__text page__text--promo">
+              <h1 class="page__title">Функциональное питание для котов.</h1>
+              <p class="page__description">Занялся собой? Займись котом</p>
+            </div>
+            <a  class="promo__link button" href="#">Подобрать программу</a>
           </div>
-          <a  class="promo__link button" href="#">Подобрать программу</a>
+          <div class="promo__img-wrapper">
+             <div class="promo__pic"></div> <!-- здесь будет картинка товара-->
+             <div class="promo__background"></div> <!-- здесь будет фоновая картинка с котиком-->
+          </div>
         </section>
         <section class="programs">
           <div class="programs__card">
@@ -61,47 +68,54 @@
         </section>
         <section class="special">
           <h2 class="special__title">Как это работает</h2>
-          <div class="special__card">
-            <div class="special__card-img"></div>
-            <p class="special__card-description">
-              Функциональное питание содержит только полезные питательные вещества.
-            </p>
-          </div>
-          <div class="special__card">
-            <div class="special__card-img"></div>
-            <p class="special__card-description">
-              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-            </p>
-          </div>
-          <div class="special__card">
-            <div class="special__card-img"></div>
-            <p class="special__card-description">
-              Замените один-два приема обычной еды на наше функциональное питание.
-            </p>
-          </div>
-          <div class="special__card">
-            <div class="special__card-img"></div>
-            <p class="special__card-description">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-            </p>
-          </div>
+          <ul class="special__list">
+            <li class="special__card">
+              <div class="special__card-img"></div>
+              <p class="special__card-description">
+                Функциональное питание содержит только полезные питательные вещества.
+              </p>
+            </li>
+            <li class="special__card">
+              <div class="special__card-img"></div>
+              <p class="special__card-description">
+                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+              </p>
+            </li>
+            <li class="special__card">
+              <div class="special__card-img"></div>
+              <p class="special__card-description">
+                Замените один-два приема обычной еды на наше функциональное питание.
+              </p>
+            </li>
+            <li class="special__card">
+              <div class="special__card-img"></div>
+              <p class="special__card-description">
+                Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              </p>
+            </li>
+          </ul>
         </section>
         <section class="example">
           <div class="example__text">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           </div>
-          <ul class="example__list">
-            <li class="example__card">
-              <h3 class="example__card-title">5 кг</h3>
-              <p class="example__card-description">снижение веса</p>
-            </li>
-            <li class="example__card">
-              <h3 class="example__card-title">60 дней</h3>
-              <p class="example__card-description">затрачено времени</p>
-            </li>
-          </ul>
-          <h3 class="example__subtitle">Затраты на питание: 15 000 руб.</h3>
+          <div class="example__lists">
+            <ul class="example__list">
+              <li class="example__card">
+                <h3 class="example__card-title">5 кг</h3>
+                <p class="example__card-description">снижение веса</p>
+              </li>
+              <li class="example__card">
+                <h3 class="example__card-title">60 дней</h3>
+                <p class="example__card-description">затрачено времени</p>
+              </li>
+            </ul>
+            <dl class="example__sublist">
+              <dt class="example__subtitle">Затраты на питание:</dt>
+              <dd class="example__subdescription">15 000 руб.</dd>
+            </dl>
+          </div>
           <div class="example__slider"></div>
         </section>
       </main>

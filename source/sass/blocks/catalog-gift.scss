@@ -4,4 +4,34 @@
   width: 280px;
   min-height: 290px;
   text-align: center;
+  margin: 35px 20px;
+  box-sizing: border-box;
+  height: fit-content;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    text-align: left;
+    padding: 71px 125px 60px 77px;
+    margin: 70px 30px 75px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0;
+    padding: 56px 42px 43px 42px;
+  }
+}
+
+.catalog-gift__text {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Lato", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 344px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 129px 0 0 0;
+  }
 }

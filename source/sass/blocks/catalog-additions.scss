@@ -6,11 +6,46 @@
   border-bottom: 1px solid #cdcdcd;
   margin: 0;
   padding: 25px 0 36px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 70px 70px 80px 70px;
+    border: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 76px 0 80px 110px;
+  }
 }
 
 .additions-list__item {
-  padding: 13px 0 19px 0;
+  padding: 13px 20px 19px 20px;
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px 38px;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0 27px 0;
+    position: relative;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+
+    &:first-child {
+      border-top: 1px solid #cdcdcd;
+    }
+  }
 }
 
 .additions-list__title {
@@ -20,15 +55,30 @@
   line-height: 16px;
   text-transform: uppercase;
   padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .additions-list__info-name {
   float: left;
   margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 49px;
+  }
 }
 
 .additions-list__info-value {
   text-align: right;
+  float: right;
 }
 
 .additions-list__info {
@@ -37,10 +87,65 @@
   font-size: 14px;
   line-height: 14px;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    position: absolute;
+    left: 325px;
+  }
 }
 
 .additions-list__button {
   width: 280px;
   min-height: 40px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}
+
+.additions-list {
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 0;
+  }
+}
+
+.additions-list__item-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.catalog-additions__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-start;
+  }
+
+}
+
+.catalog-additions__list {
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    margin: 0 81px 87px 111px;
+  }
 }

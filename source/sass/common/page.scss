@@ -1,26 +1,98 @@
 .page__body {
   font-family: "Lato", "Oswald", sans-serif;
+  font-weight: 400;
   color: $color-basic-black;
   background-color: $color-basic-white;
-  padding: 0 20px;
-  margin: 0;
+  margin: 0 auto;
+  width: $mobile-width-only;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .page__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
-  font-weight: 400;
   line-height: 36px;
   padding-top: 27px;
   margin: 0;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .page__description {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
-  font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 40px;
+  }
+}
+
+.page__text--promo {
+  background-color: $bg-color-button;
+  color: $color-basic-white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding: 65px 120px 0 120px;
+    background-color: $color-basic-white;
+    color: $color-basic-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 113px 117px 0 189px;
+  }
+}
+
+.page__text-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 720px;
+    height: 583px;
+  }
+}
+
+.page__title--catalog {
+  padding: 27px 20px 41px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 30px 84px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 84px 110px;
+  }
+}
+
+.page__text--form {
+  padding: 0 20px 39px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 70px 66px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 66px 110px;
+  }
 }

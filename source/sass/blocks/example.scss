@@ -1,53 +1,131 @@
 .example {
-  padding: 25px 0  40px 0;
+  padding: 25px 20px 40px 20px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 101px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 110px 75px 110px;
+  }
 }
 
 .example__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
-  font-weight: 400;
   line-height: 40px;
   color: $color-basic-black;
   margin: 0;
-  margin-bottom: 40px;
+  padding: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 0 60px 0;
+  }
 }
 
 .example__description {
   color: $color-dark-gray;
   font-family: "Lato", sans-serif;
   font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
   margin: 0;
-  margin-bottom: 20px;
+  padding: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 0 55px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 894px 84px 0;
+  }
 }
 
 .example__card-title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
-  font-weight: 400;
   line-height: 24px;
   color: $color-basic-black;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__card-description {
   color: $color-dark-gray;
   font-family: "Lato", sans-serif;
   font-size: 12px;
-  font-weight: 400;
   line-height: 12px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
-.example__subtitle {
+.example__sublist {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
-  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   color: $color-basic-black;
   margin: 0;
-  padding-bottom: 20px;
+  padding: 0 40px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.example__subtitle {
+  float: left;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
+  }
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.example__lists {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-right: 850px;
+  }
+}
+
+.example__card {
+  @media (min-width: $tablet-width) {
+    margin: 0 43px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 42px 55px 0;
+  }
 }
